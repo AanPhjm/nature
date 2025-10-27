@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Gallery</title>
+  <style>
+    #image {
+      background-color: #f2f2f2;
+      background-image: url('');
+      width: 500px;
+      height: 400px;
+      border: 2px solid #ccc;
+      text-align: center;
+      line-height: 400px;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .preview {
+      width: 150px;
+      margin: 5px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="image">Hover over an image below to display here.</div>
+
+  <img class="preview" alt="Beautiful Beach" src="https://th.bing.com/th/id/OIP.McsgwW4O-0jE2xJubDn_uQHaE9?w=235&h=180&c=7&r=0&o=7&pid=1.7&rm=3" onmouseover="upDate(this)" onmouseout="undo()">
+  <img class="preview" alt="Mountain View" src="https://tse2.mm.bing.net/th/id/OIP.XIzHymcjP0x5cVIdDtN9RAHaEZ?rs=1&pid=ImgDetMain&o=7&rm=3" onmouseover="upDate(this)" onmouseout="undo()">
+  <img class="preview" alt="City Lights" src="https://th.bing.com/th/id/OIP.2PINkmhakn9p9jaupE0WpgHaEK?w=261&h=180&c=7&r=0&o=7&pid=1.7&rm=3" onmouseover="upDate(this)" onmouseout="undo()">
+
+  <script src="week4.js"></script>
+</body>
+</html>
